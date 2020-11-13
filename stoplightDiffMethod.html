@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script type="text/javascript">
+
+		function butn(){
+
+			var toggleButton = document.getElementById("letters");
+			toggleButton.classList.toggle("bold");
+
+			var dn = document.getElementById("circle");
+			dn.classList.toggle("btnback");
+
+			var tr = document.getElementById("btn1");
+			tr.classList.toggle("btnback");
+          
+		}
+		
+	</script>
+
+	<style type="text/css">
+		.asd{
+			font-family: "Arial";
+		}
+		.bold{
+			font-weight: bold;
+		}
+		.btnback{
+			background-color: blue;
+		}
+		#circle{
+		  width: 200px;
+		  height: 200px;
+		  border-radius: 100px;
+		}
+		div{
+			width: 200px;
+		  height: 200px;
+		  border-radius: 100px;
+		  background-color: black;
+		}
+
+	</style>
+</head>
+<body>
+	<button onclick="butn()" id="btn1">asd</button>
+
+    <p id="letters" class="asd">ABCDEFGHIJKLMNOPQRSTUVWXYZ</p> <br>
+
+    <div id="circle">
+
+    	
+    </div>
+</body>
+</html>

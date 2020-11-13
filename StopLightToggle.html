@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+	<title>Stop Light Sapalo</title>
+  
+	<script type="text/javascript">
+
+		 let functs = {
+			redClick: function(){
+				       document.getElementById("redCircle").style.backgroundColor="#a84432";
+
+                       document.getElementById("yellowCircle").style.backgroundColor="#b5abaa";
+                       document.getElementById("greenCircle").style.backgroundColor="#b5abaa";
+
+                       document.getElementById("headtxt").innerHTML = "Stop";
+                       
+                       console.log("Red works");
+			          },
+		    yellowClick:function(){
+                          document.getElementById("yellowCircle").style.backgroundColor="#eaff47";
+
+                          document.getElementById("greenCircle").style.backgroundColor="#b5abaa";
+                          document.getElementById("redCircle").style.backgroundColor="#b5abaa";
+
+                          document.getElementById("headtxt").innerHTML = "Ready";
+
+                          console.log("Yellow works");
+			             },
+			greenClick: function(){
+                        document.getElementById("greenCircle").style.backgroundColor="#4CAF50";
+
+                        document.getElementById("redCircle").style.backgroundColor="#b5abaa";
+                        document.getElementById("yellowCircle").style.backgroundColor="#b5abaa";
+
+                        document.getElementById("headtxt").innerHTML = "Go";
+
+                        console.log("Green works");
+			            }
+
+		};
+	</script>
+
+	<style type="text/css">
+		#greenCircle{
+		 background-color: #4CAF50; 
+         border: none;
+         color: white;
+         padding: 50px;
+         text-align: center;
+         text-decoration: none;
+         display: inline-block;
+         font-size: 16px;
+         margin: 4px 2px;
+         cursor: pointer;
+         border-radius: 50%;
+		}
+		#yellowCircle{
+		 background-color: #eaff47; 
+         border: none;
+         color: white;
+         padding: 50px;
+         text-align: center;
+         text-decoration: none;
+         display: inline-block;
+         font-size: 16px;
+         margin: 4px 2px;
+         cursor: pointer;
+         border-radius: 50%;
+		}
+		#redCircle{
+		 background-color: #a84432; 
+         border: none;
+         color: white;
+         padding: 50px;
+         text-align: center;
+         text-decoration: none;
+         display: inline-block;
+         font-size: 16px;
+         margin: 4px 2px;
+         cursor: pointer;
+         border-radius: 50%;
+		}
+		
+	</style>
+</head>
+<body>
+
+
+<div class="container-fluid">
+
+     <div class="col-sm" align="center">
+     	<h1 id="headtxt"> Stoplight </h1>
+     </div>
+   
+  
+     <div align="center" id="test" class="col-sm">
+   	    <button id="redCircle" onclick="functs.redClick()">
+   		Stop!
+   	    </button>
+   	    <br>
+
+   	    <button id="yellowCircle" onclick="functs.yellowClick()">
+   		Ready
+   	    </button>
+   	    <br>
+
+   	    <button id="greenCircle" onclick="functs.greenClick()">
+   	   	Go!!!
+   	    </button>
+    
+     </div>
+   
+</div>
+</body>
+</html>
